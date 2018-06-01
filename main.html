@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>A Website</title>
@@ -13,6 +14,7 @@
       position: fixed;
       top: 0;
       width: 100%;
+      z-index:0
       }
 
       .navBarTop > li
@@ -28,32 +30,45 @@
       padding: 30px 16px;
       text-decoration: none;
       }
-      li a:hover:not(.active)
+      li a:hover:not(.activeNavBarTop)
       {
         background-color: green;
       }
-      .active
+      .activeNavBarTop
       {
         background-color:#14b003;
       }
-
+      .logo
+      {
+        z-index: 0;
+      }
     </style>
   </head>
 
   <body bgcolor="#d9d9d9">
 
       <ul class="navBarTop">
-        <li class="active"><a href="#Eins">I</a></li>
+        <li class="activeNavBarTop"><a href="#Eins">I</a></li>
         <li style="color:white"><a href="#Zwei"> II</a></li>
         <li style="color:white"><a href="#Drei"> III</a></li>
         <li style="color:white"><a href="#Vier"> IV</a></li>
         <li style="color:white"><a href="#Fuenf"> V</a></li>
 
       </ul>
-    <img src="Grey.png" alt="Icon" style="width:128px;height:128px;float:right"><img>
-
+    <img class="logo"src="Grey.png" alt="Icon" style="width:10%;height:10%;float:right;"><img>
     <p>Test Test</p>
     <p>Test Test</p>
+    <h1>Heading</h1>
+    <table style="width:100;">
+      <tr>
+        <th>Row1</th>
+        <th>Row2</th>
+        <th>Row3</th>
+      </tr>
+      <tr>
+        <td>Test</td>
+      </tr>
+    </table>
     <p>Test Test</p>
     <p>Test Test</p>
     <p>Test Test</p>
